@@ -35,6 +35,9 @@ body{
     border: none;
     border-radius: 15px;
 }
+#btn:focus{
+  outline: 0;
+}
 .hide{
    display: none;
 }
@@ -58,12 +61,12 @@ body{
 #loading-bar-middle {
     animation: loading-bar-morph 1s linear 0.2s infinite;
     transform-origin: center;
-    fill: rgb(229, 0, 250);
+    fill: rgb(255, 255, 255);
 }
 #loading-bar-right {
     animation: loading-bar-morph 1s linear 0.4s infinite;
     transform-origin: center;
-    fill: rgb(54, 54, 54);
+    fill: rgb(255, 255, 255);
   }
   
   .glow {
@@ -89,7 +92,7 @@ body{
         transform: scaleY(0.15);
       }
     }
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
