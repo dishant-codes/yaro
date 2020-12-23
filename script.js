@@ -50,6 +50,19 @@ function readOutLoud(message){
             document.getElementById('btn').classList.remove('hide');
         },3000);
     }
+  else if(message.includes('what is your name')){
+        const greetings = ['YARO'];
+        var emoji = [];
+        const finalText = greetings[Math.floor(Math.random()* greetings.length)];
+        content.textContent = finalText+emoji;
+        document.getElementById('speak').classList.add('hide');
+        document.getElementById('loading-bar').classList.remove('hide');
+        speech.text = finalText;
+        setTimeout(() => {
+            document.getElementById('loading-bar').classList.add('hide');
+            document.getElementById('btn').classList.remove('hide');
+        },3000);
+    }
     else if(message.includes('what time')){
         var date = new Date();
         var hours = date.getHours();
@@ -84,6 +97,108 @@ function readOutLoud(message){
             document.getElementById('btn').classList.remove('hide');
         },3000);
     }
+ else if(message.includes('good morning')){
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var wish;
+        if (hours < 12){
+            var emoji1 = ['🌇'];
+            wish = ['Good morning Sir'];
+        }
+        else if (hours >= 12 && hours <= 17){
+            var emoji1 = ['🌁'];            
+            wish = ['Good afternoon Sir'];
+        }
+        else if (hours >= 17 && hours <= 24){
+            var emoji1 = ['🌆'];
+            wish = ['Good evening Sir'];
+        }
+        var ampm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0'+minutes : minutes;
+        var emoji = [' ⏰'];
+        var strTime = ['its '+ hours + ':' + minutes + ' ' + ampm +', '+ wish];
+        var strTime1 = ['its '+ hours + ':' + minutes + ' ' + ampm +' '+ emoji +', '+ wish + ' '+ emoji1];
+        const finalText = strTime[Math.floor(Math.random()* strTime.length)];
+        content.textContent = strTime1;
+        document.getElementById('speak').classList.add('hide');
+        document.getElementById('loading-bar').classList.remove('hide');
+        speech.text = finalText;
+        setTimeout(() => {
+            document.getElementById('loading-bar').classList.add('hide');
+            document.getElementById('btn').classList.remove('hide');
+        },3000);
+    }
+    else if(message.includes('good afternoon')){
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var wish;
+        if (hours < 12){
+            var emoji1 = ['🌇'];
+            wish = ['Good morning Sir'];
+        }
+        else if (hours >= 12 && hours <= 17){
+            var emoji1 = ['🌁'];            
+            wish = ['Good afternoon Sir'];
+        }
+        else if (hours >= 17 && hours <= 24){
+            var emoji1 = ['🌆'];
+            wish = ['Good evening Sir'];
+        }
+        var ampm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0'+minutes : minutes;
+        var emoji = [' ⏰'];
+        var strTime = ['its '+ hours + ':' + minutes + ' ' + ampm +', '+ wish];
+        var strTime1 = ['its '+ hours + ':' + minutes + ' ' + ampm +' '+ emoji +', '+ wish + ' '+ emoji1];
+        const finalText = strTime[Math.floor(Math.random()* strTime.length)];
+        content.textContent = strTime1;
+        document.getElementById('speak').classList.add('hide');
+        document.getElementById('loading-bar').classList.remove('hide');
+        speech.text = finalText;
+        setTimeout(() => {
+            document.getElementById('loading-bar').classList.add('hide');
+            document.getElementById('btn').classList.remove('hide');
+        },3000);
+    }
+    else if(message.includes('good evening')){
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var wish;
+        if (hours < 12){
+            var emoji1 = ['🌇'];
+            wish = ['Good morning Sir'];
+        }
+        else if (hours >= 12 && hours <= 17){
+            var emoji1 = ['🌁'];            
+            wish = ['Good afternoon Sir'];
+        }
+        else if (hours >= 17 && hours <= 24){
+            var emoji1 = ['🌆'];
+            wish = ['Good evening Sir'];
+        }
+        var ampm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0'+minutes : minutes;
+        var emoji = [' ⏰'];
+        var strTime = ['its '+ hours + ':' + minutes + ' ' + ampm +', '+ wish];
+        var strTime1 = ['its '+ hours + ':' + minutes + ' ' + ampm +' '+ emoji +', '+ wish + ' '+ emoji1];
+        const finalText = strTime[Math.floor(Math.random()* strTime.length)];
+        content.textContent = strTime1;
+        document.getElementById('speak').classList.add('hide');
+        document.getElementById('loading-bar').classList.remove('hide');
+        speech.text = finalText;
+        setTimeout(() => {
+            document.getElementById('loading-bar').classList.add('hide');
+            document.getElementById('btn').classList.remove('hide');
+        },3000);
+    } 
    else if(message.includes('search')){ 
        const finalText = content.textContent.replace('search','');
        window.open(("https://www.google.com/search?q=")+(finalText),"_blank");
@@ -126,6 +241,84 @@ function readOutLoud(message){
             document.getElementById('btn').classList.remove('hide');
         },3000);
      }
+  else if(message.includes('open Facebook')){
+        var emoji = [''];
+          window.open("https://www.facebook.com");
+          opening = 'Opening facebook';
+          speech.text = opening;
+          content.textContent = opening+emoji;
+         document.getElementById('speak').classList.add('hide');
+         document.getElementById('loading-bar').classList.remove('hide');
+         setTimeout(() => {
+             document.getElementById('loading-bar').classList.add('hide');
+             document.getElementById('btn').classList.remove('hide');
+         },3000);
+      }
+      else if(message.includes('open Instagram')){
+        var emoji = [''];
+          window.open("https://www.instagram.com");
+          opening = 'Opening instagram';
+          speech.text = opening;
+          content.textContent = opening+emoji;
+         document.getElementById('speak').classList.add('hide');
+         document.getElementById('loading-bar').classList.remove('hide');
+         setTimeout(() => {
+             document.getElementById('loading-bar').classList.add('hide');
+             document.getElementById('btn').classList.remove('hide');
+         },3000);
+      }
+      else if(message.includes('open LinkedIn')){
+        var emoji = [''];
+          window.open("https://www.linkedin.com");
+          opening = 'Opening linkedin';
+          speech.text = opening;
+          content.textContent = opening+emoji;
+         document.getElementById('speak').classList.add('hide');
+         document.getElementById('loading-bar').classList.remove('hide');
+         setTimeout(() => {
+             document.getElementById('loading-bar').classList.add('hide');
+             document.getElementById('btn').classList.remove('hide');
+         },3000);
+      }
+      else if(message.includes('open GitHub')){
+        var emoji = [''];
+          window.open("https://www.github.com");
+          opening = 'Opening github';
+          speech.text = opening;
+          content.textContent = opening+emoji;
+         document.getElementById('speak').classList.add('hide');
+         document.getElementById('loading-bar').classList.remove('hide');
+         setTimeout(() => {
+             document.getElementById('loading-bar').classList.add('hide');
+             document.getElementById('btn').classList.remove('hide');
+         },3000);
+      }
+      else if(message.includes('open Amazon')){
+        var emoji = [''];
+          window.open("https://www.amazon.in");
+          opening = 'Opening amezone';
+          speech.text = opening;
+          content.textContent = opening+emoji;
+         document.getElementById('speak').classList.add('hide');
+         document.getElementById('loading-bar').classList.remove('hide');
+         setTimeout(() => {
+             document.getElementById('loading-bar').classList.add('hide');
+             document.getElementById('btn').classList.remove('hide');
+         },3000);
+      }
+      else if(message.includes('open Flipkart')){
+        var emoji = [''];
+          window.open("https://www.flipkart.com");
+          opening = 'Opening flipkart';
+          speech.text = opening;
+          content.textContent = opening+emoji;
+         document.getElementById('speak').classList.add('hide');
+         document.getElementById('loading-bar').classList.remove('hide');
+         setTimeout(() => {
+             document.getElementById('loading-bar').classList.add('hide');
+             document.getElementById('btn').classList.remove('hide');
+         },3000);
+      }
    else if(message.includes('Wikipedia')){
         const finalText = content.textContent.replace('Wikipedia','');
         window.open(("https://en.wikipedia.org/wiki/")+(finalText),"_blank");
