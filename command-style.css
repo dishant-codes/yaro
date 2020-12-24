@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&family=Sansita+Swashed:wght@300&display=swap');
+body {
+    background: url('assist/pexels-andrea-piacquadio-3776659.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 0px 0px 0px #fff, 7px 9px 20px #7641a1, 1px 0px 20px #930fff, 8px 8px 50px #930fff, 0 0 60px #930fff;
+    text-align: right;
+    margin-right: 60px;
+}
+
+ul {
+    font-size: 25px;
+    color:black;
+    margin-left: -10px;
+}
+
+section {
+    background-color:rgba(240, 240, 240, 0.479);
+    text-align: left;
+    float: right;
+    height: 73vh;
+    padding-right: 10px;
+    margin-right: 30px;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #888; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
+
+    .glow {
+        font-size: 70px;
+        color: #fff;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @keyframes loading-bar-morph {
+        0% {
+          transform: scaleY(1);
+        }
+        25% {
+          transform: scaleY(0.3);
+        }
+        50% {
+          transform: scaleY(0.7);
+        }
+        75% {
+          transform: scaleY(0.15);
+        }
+      }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #414141, 0 0 40px#414141, 0 0 50px#414141, 0 0 60px#414141, 0 0 70px#414141;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #7641a1, 0 0 40px #930fff, 0 0 50px #930fff, 0 0 60px #930fff, 0 0 70px #930fff, 0 0 80px #930fff;
+      }
+  }
+   @media only screen and (max-width: 480px) {
+    body {
+      background: url(assist/m-bg.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+    h1{
+      font-size: 40px;
+      text-align: center;
+      margin-right: 0;
+    }
+    section{
+      position: absolute;
+      top: 20%;
+      margin-right: 0;
+    }
+}
+footer{
+  position: absolute;
+  bottom: 0%;
+  color: white;
+  font-size: 13px;
+  align-items: center;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
