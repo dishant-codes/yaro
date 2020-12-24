@@ -25,10 +25,9 @@ section {
   position: absolute;
   height: 73vh;
   right: 20px;
-    padding-right: 10px;
-    margin-right: 30px;
-    overflow: auto;
-  }
+  margin-right: 30px;
+  overflow: auto;
+ }
   
   /* ScrollBar */
   ::-webkit-scrollbar {
