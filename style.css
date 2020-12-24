@@ -34,7 +34,7 @@ body{
     color: rgb(19, 19, 19);
     background-color: white;
   }
- 
+
 .container{
     position: absolute;
     top: 25%;
@@ -93,8 +93,9 @@ body{
     transform-origin: center;
     fill: rgb(255, 255, 255);
   }
-  
-  .glow {
+
+ /* glow font */
+.glow {
       font-size: 80px;
       color: #fff;
       text-align: center;
@@ -126,17 +127,23 @@ body{
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
 }
+
+/* Footer */
+
 footer{
   position: absolute;
   bottom: 2%;
   color: white;
-  font-size: 13px;
+  font-size: 16px;
   align-items: center;
 }
 footer a{
   color: white;
   text-decoration: none;
 }
+
+/* Media Query */
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .command-btn{
@@ -159,7 +166,7 @@ footer a{
     border-radius: 10px;
     background-color: rgba(250, 250, 250, 0.479);
   }
-footer{
-  bottom: -10%;
-}
+  footer{
+    bottom: -10%;
+  }
 }
