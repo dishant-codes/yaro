@@ -13,6 +13,24 @@ body{
     font-size: 80px;
     color: white;
 }
+.voice{
+  background-color:rgb(190, 190, 190);
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+  top: 280px;
+  left: 25px;
+  width: 189px;
+  padding: 3px 5px;
+} 
+.voice :hover{
+  color: rgb(117, 147, 155);
+} 
+.voice a{
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(37, 37, 37);
+}  
 .container{
     position: absolute;
     top: 25%;
