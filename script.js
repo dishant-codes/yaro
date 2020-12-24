@@ -336,7 +336,7 @@ function readOutLoud(message){
     }
    else if(message.includes("what is weather today")){
         window.open("https://www.google.com/search?q=weather","_blank");
-        finalText = 'Here is what I found for Weather'
+        finalText = 'Here is today\'s weather forecast'
         speech.text = finalText;
         var emoji = ['⛅'];
         content.textContent = finalText+emoji;
