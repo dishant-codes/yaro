@@ -51,7 +51,7 @@ section {
   
   /* Footer */
   footer{
-    position: absolute;
+    position: fixed;
     bottom: 0%;
     color: white;
     font-size: 13px;
