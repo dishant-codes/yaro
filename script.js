@@ -37,7 +37,7 @@ function readOutLoud(message){
             document.getElementById('btn').classList.remove('hide');
         },3000);
     }
-    else if(message.includes('hello Yaro')){
+    else if(message.includes('hello')){
         const greetings = ['Hello sir, How can i help you ?'];
         var emoji = ['🥰'];
         const finalText = greetings[Math.floor(Math.random()* greetings.length)];
